@@ -11,14 +11,20 @@ Should have:
 -------
 #### Normal User
 
-* Register or Login
-* Get notification email upon registration
-* Create or Adjust personal profile
-* Select Subjects of interest
-* Send a request to join a particular class
-* Send a request to join a discussion group
-* Send a message to class members/members
-* Post a material for to the group/ class and have it voted
+* Register or Login.
+* Get notification email upon registration.
+* Create or Adjust personal profile.
+* Select Subjects of interest.
+* Send a request to join a particular Class.
+* Send a request to join a discussion Group.
+* Send a message to class members/members.
+* Make a post in a Group/Class and have it voted.
 * Like or dislike a post.
-* Visit  the Library and find relevant books
-#### Admin
+* Visit  the Library and find relevant books.
+* 
+#### Admin.
+* Create Classes or groups.
+* Select admins for these classes or groups.
+* Delete existing groups and classes.
+* Remove a member/members from a group/class.
+* 
