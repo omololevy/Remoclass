@@ -28,3 +28,14 @@ Should have:
 * Delete existing groups and classes.
 * Remove a member/members from a group/class.
 * 
+
+### Attributes of the Application
+____________________________________
+* Consume API
+* Store the Posts 
+* Allow message stream
+
+### Future Plans
+___________________
+Video calls and sessions
+Financial Support
