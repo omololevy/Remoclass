@@ -20,4 +20,14 @@ def unit_list(request):
         units_serializer = UnitSerializer(units, many = True)
         return JsonResponse(units_serializer.data, safe = False)
 
-    
+
+    elif request.method == 'POST':
+        unit_data = JSONParser().parse(request)
+        unit_serializer = UnitSerializer(data = unit_data)
+        if unit_serializer.is_valid():
+            unit_serializer.save()
+            return JsonResponse(unit_serializer.data, status = status.HTTP_201_CREATED)
+
+        return JsonResponse(unit_serializer.errors, status = status.HTTP_400_BAD_REQUEST)
+        
+
