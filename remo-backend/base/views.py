@@ -1,3 +1,4 @@
+from email.policy import HTTP
 from django.shortcuts import render
 from rest_framework.decorators import api_view
 from django.http.response import JsonResponse
@@ -29,5 +30,10 @@ def unit_list(request):
             return JsonResponse(unit_serializer.data, status = status.HTTP_201_CREATED)
 
         return JsonResponse(unit_serializer.errors, status = status.HTTP_400_BAD_REQUEST)
-        
+
+
+    elif request.method == 'DELETE':
+        total = Unit.objects.all().delete
+        return JsonResponse({'message': "{} has been removed!". 
+        format(total[0])}, status = status.HTTP_204_NO_CONTENT)
 
